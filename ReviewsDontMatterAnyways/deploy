@@ -1,0 +1,7 @@
+USER=site
+HOST=64.227.94.136
+DIR=/var/www/reviewsdontmatteranyways.com
+
+hugo && rsync -avz --delete public/ ${USER}@${HOST}:${DIR}
+
+exit 0

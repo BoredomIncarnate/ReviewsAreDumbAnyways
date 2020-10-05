@@ -1,0 +1,8 @@
+baseURL = "https://reviewsdontmatteranyways.com"
+languageCode = "en-us"
+theme="anatole"
+
+[params]
+profilePicture="/images/profile.jpg"
+title = "Reviews Don't Matter Anyways"
+description = "A site where a late millinial reviews content that I've either wasn't old enough to review yet or just didn't know about to review before"

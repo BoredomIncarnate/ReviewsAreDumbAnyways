@@ -1,0 +1,9 @@
+[submodule "ReviewsDontMatterAnyways/themes/hugo-paper"]
+	path = ReviewsDontMatterAnyways/themes/hugo-paper
+	url = https://github.com/nanxiaobei/hugo-paper.git
+[submodule "ReviewsDontMatterAnyways/themes/paper"]
+	path = ReviewsDontMatterAnyways/themes/paper
+	url = https://github.com/nanxiaobei/hugo-paper
+[submodule "ReviewsDontMatterAnyways/themes/anatole"]
+	path = ReviewsDontMatterAnyways/themes/anatole
+	url = https://github.com/lxndrblz/anatole.git
