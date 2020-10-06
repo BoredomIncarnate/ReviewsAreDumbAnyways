@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>https://reviewsdontmatteranyways.com/</link>
-    <description>Recent content on </description>
+    <title>Reviews Don&#39;t Matter Anyways</title>
+    <link>/</link>
+    <description>Recent content on Reviews Don&#39;t Matter Anyways</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2020 20:37:08 -0700</lastBuildDate><atom:link href="https://reviewsdontmatteranyways.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Oct 2020 20:37:08 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://reviewsdontmatteranyways.com/posts/my-first-post/</link>
+      <title>What is the point of this?</title>
+      <link>/posts/my-first-post/</link>
       <pubDate>Sun, 04 Oct 2020 20:37:08 -0700</pubDate>
       
-      <guid>https://reviewsdontmatteranyways.com/posts/my-first-post/</guid>
-      <description></description>
+      <guid>/posts/my-first-post/</guid>
+      <description>tl;dr Just a guy reviewing media from the 80s/90s/early 00s.
+Introduction Hello internet, though this isn&amp;rsquo;t the first time I&amp;rsquo;ve made this statement&amp;ndash; in the format of a blog&amp;ndash;, I&amp;rsquo;m happy to be meeting you.
+So, my name is Kyle. I live in Seattle. I like movies, and tv, and books&amp;hellip; you get the point.
+It seems that a lot of the movies I enjoy or find intriguing were released before I was really aware of them or able to consume them.</description>
     </item>
     
   </channel>

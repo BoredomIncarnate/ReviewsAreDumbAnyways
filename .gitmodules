@@ -7,3 +7,6 @@
 [submodule "ReviewsDontMatterAnyways/themes/anatole"]
 	path = ReviewsDontMatterAnyways/themes/anatole
 	url = https://github.com/lxndrblz/anatole.git
+[submodule "ReviewsDontMatterAnyways/themes/papermod"]
+	path = ReviewsDontMatterAnyways/themes/papermod
+	url = https://github.com/adityatelange/hugo-PaperMod

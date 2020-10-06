@@ -1,119 +1,115 @@
 <!DOCTYPE html>
-<html lang="en" data-theme=""><head>
-    <title>  | My First Post </title>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>What is the point of this? - Reviews Don&#39;t Matter Anyways</title>
+    
+    <meta name="description" content="tl;dr Just a guy reviewing media from the 80s/90s/early 00s.
+Introduction Hello internet, though this isn&rsquo;t the first time I&rsquo;ve made this statement&ndash; in the format of a blog&ndash;, I&rsquo;m happy to be meeting you.
+So, my name is Kyle. I live in Seattle. I like movies, and tv, and books&hellip; you get the point.
+It seems that a lot of the movies I enjoy or find intriguing were released before I was really aware of them or able to consume them.">
+    <meta name="author" content="">
+    
+    <link href="/an-old-hope.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/custom.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="generator" content="Hugo 0.75.1" />
+    
+    
+    
+    <script>
+      function setTheme() {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.body.classList.add('dark');
+          return;
+        }
 
-    
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.75.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="A site where a late millinial reviews content that I&#39;ve either wasn&#39;t old enough to review yet or just didn&#39;t know about to review before">
-    
-    <link rel="stylesheet"
-          href="https://reviewsdontmatteranyways.com/css/style.min.ec15cff0912041d0dce3a88999b9424990bd24473761645397583776684cdc3b.css"
-          integrity="sha256-7BXP8JEgQdDc46iJmblCSZC9JEc3YWRTl1g3dmhM3Ds="
-          crossorigin="anonymous"
-          type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        const time = new Date();
+        const prev = localStorage.getItem('date');
+        const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
 
-    
-    <link rel="shortcut icon" href="https://reviewsdontmatteranyways.comfavicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://reviewsdontmatteranyways.comapple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://reviewsdontmatteranyways.comfavicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://reviewsdontmatteranyways.comfavicon-16x16.png">
+        const now = time.getTime();
+        let sunrise;
+        let sunset;
 
-    <link rel="canonical" href="https://reviewsdontmatteranyways.com/posts/my-first-post/">
+        function setBodyClass() {
+          if (now > sunrise && now < sunset) return;
+          document.body.classList.add('dark');
+        }
 
-    
-    
-    
-    
-    <script type="text/javascript"
-            src="https://reviewsdontmatteranyways.com/js/anatole-header.min.e782db136ec18d105a4552702eac49f4620d6867da3fbf808bd53e806c96be6e.js"
-            integrity="sha256-54LbE27BjRBaRVJwLqxJ9GINaGfaP7&#43;Ai9U&#43;gGyWvm4="
-            crossorigin="anonymous"></script>
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="My First Post"/>
-<meta name="twitter:description" content=""/>
+        if (date !== prev) {
+          fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+            .then((res) => res.json())
+            .then((data) => {
+              sunrise = data.sunrise.split(':').map(Number);
+              sunset = data.sunset.split(':').map(Number);
+            })
+            .catch(() => {
+              sunrise = [7, 0];
+              sunset = [19, 0];
+            })
+            .finally(() => {
+              sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+              sunset = time.setHours(sunset[0], sunset[1], 0);
+              setBodyClass();
+              localStorage.setItem('sunrise', sunrise);
+              localStorage.setItem('sunset', sunset);
+            });
+          localStorage.setItem('date', date);
+        } else {
+          sunrise = Number(localStorage.getItem('sunrise'));
+          sunset = Number(localStorage.getItem('sunset'));
+          setBodyClass();
+        }
+      }
+    </script>
+  </head>
+  <body class="single">
+    <script>
+      setTheme();
+    </script>
+    <header class="header">
+      <nav class="nav">
+        <p class="logo"><a href="/">Reviews Don&#39;t Matter Anyways</a></p>
+      </nav>
+    </header>
+    <main class="main">
 
-</head>
-<body><div class="sidebar animated fadeInDown">
-    <div class="logo-title">
-        <div class="title">
-            <img src="https://reviewsdontmatteranyways.com/images/profile.jpg" alt="profile picture">
-            <h3 title=""><a href="/">Reviews Don&#39;t Matter Anyways</a></h3>
-            <div class="description">
-                <p>A site where a late millinial reviews content that I&#39;ve either wasn&#39;t old enough to review yet or just didn&#39;t know about to review before</p>
-            </div>
-        </div>
-    </div>
-    <ul class="social-links">
-        
-    </ul>
-    <div class="footer">
-        <div class="by_farbox">&copy;  2020 </div>
-    </div>
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">What is the point of this?</h1>
+    <div class="post-meta">October 4, 2020</div>
+  </header>
+  <div class="post-content"><h2 id="tldr">tl;dr</h2>
+<p>Just a guy reviewing media from the 80s/90s/early 00s.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Hello internet, though this isn&rsquo;t the first time I&rsquo;ve made this statement&ndash; in the format of a blog&ndash;, I&rsquo;m happy to be <em>meeting</em> you.</p>
+<p>So, my name is Kyle. I live in Seattle. I like movies, and tv, and books&hellip; you get the point.</p>
+<p>It seems that a lot of the movies I enjoy or find intriguing were released before I was really aware of them or able to consume them.
+That being said, I still want to talk about these things, and what better way then by talking to everyone at the same time?</p>
+<h2 id="what-happens-now">What happens now?</h2>
+<p>Well, nothing really. My first review will, most likely, be on Dazed and Confused. Current Working sub-title &ldquo;Everything cool happens in cars.&rdquo;.</p>
 </div>
-<div class="main">
-    <div class="page-top animated fadeInDown">
-    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-    </a>
-    <ul class="nav" id="navMenu">
-        
-        
-        
-        <li class="theme-switch-item">
-            <a class="theme-switch" title="Switch Theme">
-                <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
-            </a>
-        </li>
-    </ul>
-</div>
-
-    <div class="autopagerize_page_element">
-        <div class="content">
-    <div class="post animated fadeInDown">
-        <div class="post-content">
-
-            <div class="post-title">
-                <h3>My First Post</h3>
-                
-            </div>
-
-            
-        </div>
-        <div class="post-footer">
-            <div class="info">
-                
-                
-            </div>
-        </div>
-
-        
-    </div>
-
-
-        </div>
-    </div>
-</div>
-
-<script type="text/javascript"
-        src="https://reviewsdontmatteranyways.com/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js"
-        integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw="
-        crossorigin="anonymous"></script>
-
-
-
-
-<script type="text/javascript"
-        src="https://reviewsdontmatteranyways.com/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js"
-        integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4="
-        crossorigin="anonymous"></script>
-
-<script type="text/javascript"
-        src="https://reviewsdontmatteranyways.com/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
-        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
-        crossorigin="anonymous"></script>
+  
+</article></main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="/">Reviews Don&#39;t Matter Anyways</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
 </body>
-
 </html>
+

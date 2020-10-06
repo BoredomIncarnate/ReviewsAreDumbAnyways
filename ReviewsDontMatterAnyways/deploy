@@ -1,6 +1,6 @@
 USER=site
 HOST=64.227.94.136
-DIR=/var/www/reviewsdontmatteranyways.com
+DIR=/var/www/html
 
 hugo && rsync -avz --delete public/ ${USER}@${HOST}:${DIR}
 

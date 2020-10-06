@@ -3,26 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://reviewsdontmatteranyways.com/</loc>
+    <loc>/posts/</loc>
     <lastmod>2020-10-04T20:37:08-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://reviewsdontmatteranyways.com/posts/my-first-post/</loc>
+    <loc>/</loc>
     <lastmod>2020-10-04T20:37:08-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://reviewsdontmatteranyways.com/posts/</loc>
+    <loc>/posts/my-first-post/</loc>
     <lastmod>2020-10-04T20:37:08-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://reviewsdontmatteranyways.com/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://reviewsdontmatteranyways.com/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
